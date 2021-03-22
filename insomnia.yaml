@@ -1,0 +1,185 @@
+_type: export
+__export_format: 4
+__export_date: 2021-03-22T00:52:39.189Z
+__export_source: insomnia.desktop.app:v2021.1.1
+resources:
+  - _id: req_b84995cd2b6a4b50ae74c569709e1848
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616371945330
+    created: 1616371429777
+    url: "{{ _.baseUrl }}/repositories/{% response 'body',
+      'req_836e6e50c1844d7e8d0e0a7db13b7d92', 'b64::JFswXVsnaWQnXQ==::46b',
+      'never', 60 %}"
+    name: Delete Repository
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616371429865
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_836dc213a0514cf8b0d87358d968a4de
+    parentId: null
+    modified: 1616370624208
+    created: 1616370604902
+    name: Desafio 03 - Corrigindo o código
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_843e90b8f2bf49c8811a2625db62d32a
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616374239680
+    created: 1616370917340
+    url: "{{ _.baseUrl }}/repositories/{% response 'body',
+      'req_836e6e50c1844d7e8d0e0a7db13b7d92', 'b64::JFswXVsnaWQnXQ==::46b',
+      'always', 60 %}"
+    name: Update Repository
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Repositorio 01",
+        	"url": "http://github.com/fermaiasoares",
+        	"techs": ["React", "React JS", "React Native", "PHP"],
+        	"likes": 10
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1e62c34f45af4084ac06abe3a4456d41
+    authentication: {}
+    metaSortKey: -1616370917340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_11566b45dd254898ba75e81568cc8ea8
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616371920516
+    created: 1616371549763
+    url: "{{ _.baseUrl }}/repositories/{% response 'body',
+      'req_836e6e50c1844d7e8d0e0a7db13b7d92', 'b64::JFswXVsnaWQnXQ==::46b',
+      'never', 60 %}/like"
+    name: Like a Repository
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616370799007
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_836e6e50c1844d7e8d0e0a7db13b7d92
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616370687535
+    created: 1616370680674
+    url: "{{ _.baseUrl }}/repositories"
+    name: Get Repositories
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616370680674
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4b4524de61fc4288a2460a987c43f510
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616370810590
+    created: 1616370710561
+    url: "{{ _.baseUrl }}/repositories"
+    name: Create Repository
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Repositorio 01",
+        	"url": "http://github.com/fermaiasoares",
+        	"techs": ["React", "React JS", "React Native", "PHP"]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_b985a9d7d2ba4be3911589104f0d15c1
+    authentication: {}
+    metaSortKey: -1616358925930.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_36bd8d26d2b02026e8d366e5a99b19c6f81f76a0
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616370605440
+    created: 1616370605440
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1616370605440
+    _type: environment
+  - _id: jar_36bd8d26d2b02026e8d366e5a99b19c6f81f76a0
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616370605456
+    created: 1616370605456
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_a023f31c6ddf4d1fa0b5e5218ce27f8e
+    parentId: wrk_836dc213a0514cf8b0d87358d968a4de
+    modified: 1616370604906
+    created: 1616370604906
+    fileName: GET Repositories
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_fde5e0c3461c45b6872fcc871a4f90f6
+    parentId: env_36bd8d26d2b02026e8d366e5a99b19c6f81f76a0
+    modified: 1616370667917
+    created: 1616370634995
+    name: Desenvolvimento
+    data:
+      baseUrl: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: "#553267"
+    isPrivate: false
+    metaSortKey: 1616370634995
+    _type: environment
